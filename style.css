@@ -1,0 +1,1126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #1f2937;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+#themeButton {
+    border: none;
+    background: #f1f3f7;
+    padding: 10px 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 620px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-bottom: 22px;
+    border-radius: 30px;
+    background: #eef0f4;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.02;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #6b7280;
+}
+
+.hero-text > p {
+    color: #6b7280;
+    font-size: 18px;
+    max-width: 520px;
+    margin-bottom: 32px;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 42px;
+}
+
+.start-button {
+    border: none;
+    padding: 15px 24px;
+    border-radius: 12px;
+    background: #111827;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.start-button:hover {
+    transform: translateY(-3px);
+}
+
+.explore-button {
+    text-decoration: none;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.explore-button:hover {
+    background: #f1f3f7;
+}
+
+
+/* =========================
+   HERO STATS
+========================= */
+
+.hero-stats {
+    display: flex;
+    gap: 45px;
+}
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stats strong {
+    font-size: 25px;
+}
+
+.hero-stats span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #9ca3af;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+    position: relative;
+    width: 430px;
+    min-width: 430px;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-card {
+    width: 340px;
+    padding: 28px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 28px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.10);
+    position: relative;
+    z-index: 2;
+}
+
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+
+.big-progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.progress-ring {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        conic-gradient(
+            #111827 0deg 270deg,
+            #e5e7eb 270deg 360deg
+        );
+    position: relative;
+}
+
+.progress-ring::after {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background: white;
+}
+
+.progress-ring span {
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dashboard-card h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.dashboard-card p {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.mini-progress {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.mini-progress div {
+    width: 75%;
+    height: 100%;
+    background: #111827;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   FLOATING CARDS
+========================= */
+
+.floating-card {
+    position: absolute;
+    padding: 13px 17px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+    font-size: 13px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.card-one {
+    top: 55px;
+    left: -5px;
+}
+
+.card-one span {
+    margin-right: 6px;
+}
+
+.card-two {
+    right: -10px;
+    bottom: 60px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   SUBJECTS
+========================= */
+
+.subject-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.subject-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+}
+
+.subject-card span {
+    font-size: 30px;
+}
+
+.subject-card h3 {
+    margin-top: 15px;
+}
+
+.subject-card p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   TASKS
+========================= */
+
+.task-box {
+    max-width: 700px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+}
+
+.task-box label {
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.task-box label:last-child {
+    border-bottom: none;
+}
+
+.task-box input {
+    margin-right: 12px;
+}
+
+
+/* =========================
+   FOCUS TIMER
+========================= */
+
+.timer-section {
+    text-align: center;
+}
+
+.timer-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+#timerDisplay {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.timer-buttons button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: #111827;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.timer-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.timer-box p {
+    margin-top: 20px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-section {
+    text-align: center;
+}
+
+.progress-section p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.progress-bar {
+    max-width: 700px;
+    height: 15px;
+    margin: auto;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 75%;
+    height: 100%;
+    background: #111827;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    color: #6b7280;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode header {
+    background: #1f2937;
+    color: #f9fafb;
+    border-color: #374151;
+}
+
+body.dark-mode nav a {
+    color: #d1d5db;
+}
+
+body.dark-mode nav a:hover {
+    color: white;
+}
+
+body.dark-mode #themeButton {
+    background: #374151;
+}
+
+body.dark-mode .hero-badge,
+body.dark-mode .explore-button {
+    background: #374151;
+    color: #f9fafb;
+    border-color: #4b5563;
+}
+
+body.dark-mode .hero h1 span {
+    color: #d1d5db;
+}
+
+body.dark-mode .hero-text > p {
+    color: #d1d5db;
+}
+
+body.dark-mode .dashboard-card,
+body.dark-mode .floating-card,
+body.dark-mode .subject-card,
+body.dark-mode .task-box,
+body.dark-mode .timer-box,
+body.dark-mode footer {
+    background: #1f2937;
+    color: #f9fafb;
+    border-color: #374151;
+}
+
+body.dark-mode .dashboard-top,
+body.dark-mode .dashboard-card p,
+body.dark-mode .subject-card p,
+body.dark-mode .progress-section p,
+body.dark-mode .timer-box p {
+    color: #d1d5db;
+}
+
+body.dark-mode .progress-ring::after {
+    background: #1f2937;
+}
+
+body.dark-mode .mini-progress,
+body.dark-mode .progress-bar {
+    background: #374151;
+}
+
+body.dark-mode .mini-progress div,
+body.dark-mode .progress-fill {
+    background: #f9fafb;
+}
+
+body.dark-mode .start-button {
+    background: #f9fafb;
+    color: #111827;
+}
+
+body.dark-mode .timer-buttons button {
+    background: #f9fafb;
+    color: #111827;
+}
+
+body.dark-mode .task-box label {
+    border-color: #374151;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .hero-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+/* =========================
+   SUBJECTS PAGE
+========================= */
+
+.page-hero {
+    text-align: center;
+    padding: 90px 8% 60px;
+}
+
+.page-hero .hero-badge {
+    margin-bottom: 20px;
+}
+
+.page-hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.page-hero h1 span {
+    color: #6b7280;
+}
+
+.page-hero p {
+    max-width: 550px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 17px;
+}
+
+.subjects-page {
+    padding: 20px 8% 90px;
+}
+
+.subjects-page .subject-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.subjects-page .subject-card {
+    min-height: 260px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.subjects-page .subject-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.subject-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f7;
+    border-radius: 16px;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.subject-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.subject-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: bold;
+}
+
+
+/* SUBJECTS PAGE - DARK MODE */
+
+body.dark-mode .page-hero p {
+    color: #d1d5db;
+}
+
+body.dark-mode .page-hero h1 span {
+    color: #d1d5db;
+}
+
+body.dark-mode .subject-icon {
+    background: #374151;
+}
+
+body.dark-mode .subject-info {
+    border-color: #374151;
+    color: #d1d5db;
+}
+
+
+/* SUBJECTS PAGE - MOBILE */
+
+@media (max-width: 900px) {
+
+    .subjects-page .subject-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .page-hero {
+        padding: 60px 5% 40px;
+    }
+
+    .page-hero h1 {
+        font-size: 42px;
+    }
+
+    .subjects-page {
+        padding: 20px 5% 60px;
+    }
+
+    .subjects-page .subject-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+        transform: scale(0.85);
+    }
+
+    .subject-container {/* =========================
+   TASKS PAGE
+========================= */
+
+.tasks-page {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px 8% 90px;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.study-task {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    align-items: center;
+    gap: 25px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.study-task:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.task-time {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.task-details h2 {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.task-details p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.task-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.task-check input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.study-summary {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+    background: #111827;
+    color: white;
+    border-radius: 18px;
+}
+
+.study-summary strong {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.study-summary span {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+/* TASKS DARK MODE */
+
+body.dark-mode .study-task {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .task-details p {
+    color: #d1d5db;
+}
+
+body.dark-mode .study-summary {
+    background: #f9fafb;
+    color: #111827;
+}
+
+
+/* TASKS MOBILE */
+
+@media (max-width: 700px) {
+
+    .tasks-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .study-task {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .task-check {
+        margin-top: 5px;
+    }
+
+}
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .hero-stats {
+        gap: 25px;
+    }
+}
+/* =========================
+   FOCUS PAGE
+========================= */
+
+.focus-page {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px 8% 90px;
+}
+
+.focus-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 45px;
+    text-align: center;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.current-label {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.focus-card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#focusTime {
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#sessionTime {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.focus-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.focus-buttons button {
+    border: none;
+    padding: 13px 24px;
+    border-radius: 11px;
+    background: #111827;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.focus-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* SCHEDULE */
+
+.schedule-card {
+    margin-top: 35px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 22px;
+}
+
+.schedule-card > h2 {
+    margin-bottom: 20px;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 100px 1fr 70px;
+    align-items: center;
+    padding: 18px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-item span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.schedule-item strong {
+    font-size: 15px;
+}
+
+.schedule-item small {
+    text-align: right;
+    color: #9ca3af;
+}
+
+.active-session {
+    border-radius: 12px;
+    background: #f1f3f7;
+}
+
+.schedule-end {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f1f3f7;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .focus-card,
+body.dark-mode .schedule-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode #sessionTime {
+    color: #d1d5db;
+}
+
+body.dark-mode .schedule-item {
+    border-color: #374151;
+}
+
+body.dark-mode .schedule-item span {
+    color: #d1d5db;
+}
+
+body.dark-mode .active-session,
+body.dark-mode .schedule-end {
+    background: #374151;
+}
+
+body.dark-mode .focus-buttons button {
+    background: #f9fafb;
+    color: #111827;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .focus-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .focus-card {
+        padding: 30px 20px;
+    }
+
+    #focusTime {
+        font-size: 58px;
+    }
+
+    .schedule-item {
+        grid-template-columns: 75px 1fr;
+        gap: 5px;
+    }
+
+    .schedule-item small {
+        display: none;
+    }
+
+}
+/* =========================
+   SMALL SUBJECT PROGRESS CIRCLES
+========================= */
+
+.subject-circle-progress {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.small-progress-ring {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: conic-gradient(
+        #111827 0deg 0deg,
+        #e5e7eb 0deg 360deg
+    );
+
+    position: relative;
+}
+
+.small-progress-ring::after {
+    content: "";
+
+    position: absolute;
+
+    width: 57px;
+    height: 57px;
+
+    border-radius: 50%;
+
+    background: white;
+}
+
+.small-progress-ring span {
+    position: relative;
+    z-index: 1;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #111827;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .small-progress-ring::after {
+    background: #1f2937;
+}
+
+body.dark-mode .small-progress-ring span {
+    color: #f9fafb;
+}

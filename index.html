@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow | Study Smarter</title>
+
+    <link rel="stylesheet"
+        href="./style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            StudyFlow
+        </div>
+
+
+        <nav>
+
+            <a href="./index.html">
+                Home
+            </a>
+
+            <a href="./subject.html">
+                Subjects
+            </a>
+
+            <a href="./task.html">
+                Tasks
+            </a>
+
+            <a href="./focus.html">
+                Focus
+            </a>
+
+            <a href="./progress.html">
+                Progress
+            </a>
+
+        </nav>
+
+
+        <button id="themeButton">
+            ☀️
+        </button>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section
+            id="home"
+            class="hero">
+
+
+            <div class="hero-text">
+
+
+                <div class="hero-badge">
+                    ✦ YOUR PERSONAL STUDY SPACE
+                </div>
+
+
+                <h1>
+
+                    Focus better.<br>
+
+                    <span>
+                        Achieve more.
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Plan your study sessions,
+                    complete your academic tasks,
+                    and track your progress —
+                    one subject at a time.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+
+                    <a
+                        href="./focus.html"
+                        class="start-button">
+
+                        Start Studying →
+
+                    </a>
+
+
+                    <a
+                        href="./focus.html"
+                        class="explore-button">
+
+                        Explore Focus Mode
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- HERO STATS -->
+
+                <div class="hero-stats">
+
+
+                    <div>
+
+                        <strong>
+                            30
+                        </strong>
+
+                        <span>
+                            MIN FOCUS
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            05
+                        </strong>
+
+                        <span>
+                            SUBJECTS
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            30
+                        </strong>
+
+                        <span>
+                            DAILY TASKS
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+
+                <div class="floating-card card-one">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    Task completed
+
+                </div>
+
+
+
+                <div class="dashboard-card">
+
+
+                    <div class="dashboard-top">
+
+                        <span>
+                            Overall Progress
+                        </span>
+
+                        <span>
+                            •••
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="big-progress">
+
+                        <div
+                            class="progress-ring">
+
+                            <span
+                                id="heroProgressText">
+
+                                0%
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <h3
+                        id="progressMessage">
+
+                        Start your study journey!
+
+                    </h3>
+
+
+                    <p>
+
+                        Complete your tasks
+                        and watch your progress grow.
+
+                    </p>
+
+
+
+                    <div
+                        class="mini-progress">
+
+                        <div
+                            id="heroMiniProgress">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="floating-card card-two">
+
+                    ⏱️ 30 min focus
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             SUBJECTS
+        ========================== -->
+
+        <section
+            id="subjects"
+            class="section">
+
+
+            <h2>
+                My Subjects
+            </h2>
+
+
+            <p class="section-intro">
+
+                Each subject gets a
+                30-minute focused study session.
+
+            </p>
+
+
+
+            <div class="subject-container">
+
+
+
+                <!-- COMPUTER VISION -->
+
+                <div class="subject-card">
+
+                    <span class="subject-icon">
+                        👁️
+                    </span>
+
+
+                    <h3>
+                        Computer Vision
+                    </h3>
+
+
+                    <p>
+                        7:00 – 7:30 PM
+                    </p>
+
+
+                    <div class="subject-circle-progress">
+
+                        <div
+                            class="small-progress-ring"
+                            data-progress-circle="cv">
+
+                            <span>
+                                0%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- DATA MINING -->
+
+                <div class="subject-card">
+
+                    <span class="subject-icon">
+                        ⛏️
+                    </span>
+
+
+                    <h3>
+                        Data Mining
+                    </h3>
+
+
+                    <p>
+                        7:30 – 8:00 PM
+                    </p>
+
+
+                    <div class="subject-circle-progress">
+
+                        <div
+                            class="small-progress-ring"
+                            data-progress-circle="dm">
+
+                            <span>
+                                0%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- IOT -->
+
+                <div class="subject-card">
+
+                    <span class="subject-icon">
+                        🌐
+                    </span>
+
+
+                    <h3>
+                        IoT
+                    </h3>
+
+
+                    <p>
+                        8:00 – 8:30 PM
+                    </p>
+
+
+                    <div class="subject-circle-progress">
+
+                        <div
+                            class="small-progress-ring"
+                            data-progress-circle="iot">
+
+                            <span>
+                                0%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- DAA -->
+
+                <div class="subject-card">
+
+                    <span class="subject-icon">
+                        🧮
+                    </span>
+
+
+                    <h3>
+                        DAA
+                    </h3>
+
+
+                    <p>
+                        8:30 – 9:00 PM
+                    </p>
+
+
+                    <div class="subject-circle-progress">
+
+                        <div
+                            class="small-progress-ring"
+                            data-progress-circle="daa">
+
+                            <span>
+                                0%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- DEEP LEARNING -->
+
+                <div class="subject-card">
+
+                    <span class="subject-icon">
+                        🧠
+                    </span>
+
+
+                    <h3>
+                        Deep Learning
+                    </h3>
+
+
+                    <p>
+                        9:00 – 9:30 PM
+                    </p>
+
+
+                    <div class="subject-circle-progress">
+
+                        <div
+                            class="small-progress-ring"
+                            data-progress-circle="dl">
+
+                            <span>
+                                0%
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             TASKS
+        ========================== -->
+
+        <section
+            id="tasks"
+            class="section">
+
+
+            <h2>
+                Today's Study Tasks
+            </h2>
+
+
+            <p class="section-intro">
+
+                Complete the six tasks for
+                each subject after your study session.
+
+            </p>
+
+
+
+            <!-- COMPUTER VISION -->
+
+            <div
+                class="subject-task-box">
+
+                <div class="task-subject-title">
+
+                    <div>
+
+                        <span>
+                            👁️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Computer Vision
+                            </h3>
+
+                            <p>
+                                7:00 – 7:30 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong
+                        id="cvTaskCount">
+
+                        0 / 6
+
+                    </strong>
+
+                </div>
+
+
+                <div class="task-box">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="cv">
+                        📝 Prepare notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="cv">
+                        📖 Read notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="cv">
+                        📒 Write record
+                        <span class="optional">
+                            (if required)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="cv">
+                        🎤 Prepare for seminar
+                        <span class="optional">
+                            (if scheduled)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="cv">
+                        🏠 Do homework
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="cv">
+                        📑 Do assignments
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DATA MINING -->
+
+            <div
+                class="subject-task-box">
+
+                <div class="task-subject-title">
+
+                    <div>
+
+                        <span>
+                            ⛏️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Data Mining
+                            </h3>
+
+                            <p>
+                                7:30 – 8:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong
+                        id="dmTaskCount">
+
+                        0 / 6
+
+                    </strong>
+
+                </div>
+
+
+                <div class="task-box">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dm">
+                        📝 Prepare notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dm">
+                        📖 Read notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dm">
+                        📒 Write record
+                        <span class="optional">
+                            (if required)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dm">
+                        🎤 Prepare for seminar
+                        <span class="optional">
+                            (if scheduled)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dm">
+                        🏠 Do homework
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dm">
+                        📑 Do assignments
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IOT -->
+
+            <div
+                class="subject-task-box">
+
+                <div class="task-subject-title">
+
+                    <div>
+
+                        <span>
+                            🌐
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                IoT
+                            </h3>
+
+                            <p>
+                                8:00 – 8:30 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong
+                        id="iotTaskCount">
+
+                        0 / 6
+
+                    </strong>
+
+                </div>
+
+
+                <div class="task-box">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="iot">
+                        📝 Prepare notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="iot">
+                        📖 Read notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="iot">
+                        📒 Write record
+                        <span class="optional">
+                            (if required)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="iot">
+                        🎤 Prepare for seminar
+                        <span class="optional">
+                            (if scheduled)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="iot">
+                        🏠 Do homework
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="iot">
+                        📑 Do assignments
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DAA -->
+
+            <div
+                class="subject-task-box">
+
+                <div class="task-subject-title">
+
+                    <div>
+
+                        <span>
+                            🧮
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                DAA
+                            </h3>
+
+                            <p>
+                                8:30 – 9:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong
+                        id="daaTaskCount">
+
+                        0 / 6
+
+                    </strong>
+
+                </div>
+
+
+                <div class="task-box">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="daa">
+                        📝 Prepare notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="daa">
+                        📖 Read notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="daa">
+                        📒 Write record
+                        <span class="optional">
+                            (if required)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="daa">
+                        🎤 Prepare for seminar
+                        <span class="optional">
+                            (if scheduled)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="daa">
+                        🏠 Do homework
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="daa">
+                        📑 Do assignments
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DEEP LEARNING -->
+
+            <div
+                class="subject-task-box">
+
+                <div class="task-subject-title">
+
+                    <div>
+
+                        <span>
+                            🧠
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Deep Learning
+                            </h3>
+
+                            <p>
+                                9:00 – 9:30 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong
+                        id="dlTaskCount">
+
+                        0 / 6
+
+                    </strong>
+
+                </div>
+
+
+                <div class="task-box">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dl">
+                        📝 Prepare notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dl">
+                        📖 Read notes
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dl">
+                        📒 Write record
+                        <span class="optional">
+                            (if required)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dl">
+                        🎤 Prepare for seminar
+                        <span class="optional">
+                            (if scheduled)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dl">
+                        🏠 Do homework
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            data-subject="dl">
+                        📑 Do assignments
+                        <span class="optional">
+                            (if given)
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             OVERALL PROGRESS
+        ========================== -->
+
+        <section
+            id="progress"
+            class="section progress-section">
+
+
+            <h2>
+                Overall Progress 🚀
+            </h2>
+
+
+            <p
+                id="overallProgressText">
+
+                0% of all study tasks completed.
+
+            </p>
+
+
+            <div
+                class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="overallProgressFill">
+
+                </div>
+
+            </div>
+
+
+            <p
+                id="progressStatus">
+
+                Complete your tasks
+                to reach 75%.
+
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 StudyFlow • Made for better study days.
+
+        </p>
+
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
